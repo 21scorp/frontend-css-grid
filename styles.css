@@ -1,1 +1,66 @@
-/*Maak hier jouw CSS!*/
+
+
+.container {
+    background: #ededed;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 50px 190px 100px auto 50px ;
+    grid-gap: 16px;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+        "header c c"
+        "b c c"
+        "b e d"
+        "b e lege-rij"
+        "f f f"
+
+
+
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    background-color: #063b24;
+    grid-area: header;
+}
+
+#b {
+    background-color: #D0FFD6;
+    grid-area: b;
+}
+
+#c {
+    background-color: #D5E2BC;
+    grid-area: c;
+}
+
+#d {
+    background-color: #A6979C;
+    grid-area: d;
+}
+
+#e {
+    background-color: #D3C0D2;
+    grid-area: e;
+}
+
+#lege-rij {
+    background-color: burlywood;
+    grid-area: lege-rij;
+}
+
+#f {
+    background-color: coral;
+    grid-area: f;
+}
+
+#b {
+
+}
